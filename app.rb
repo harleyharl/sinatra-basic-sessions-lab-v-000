@@ -11,9 +11,7 @@ class App < Sinatra::Base
     binding.pry
     @session = session
     @item = Item.new
-    @item.name = pa
-    session[:item] = params[:item]
-  #  binding.pry
+    @item.name = params[:item]
     erb :index
   end
 
